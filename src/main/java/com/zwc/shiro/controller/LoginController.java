@@ -79,11 +79,11 @@ public class LoginController {
 	  subject.login(token);
 	  //根据权限，指定返回数据
 	  String role = userMapper.getRole(username);
-	  if ("user".equals(role)) {
+	  if ("1".equals(role)) {
 		  resultMap.put("message", "欢迎登陆");
 		  return resultMap;
 	  }
-	  if ("admin".equals(role)) {
+	  if ("2".equals(role)) {
 		  resultMap.put("message", "欢迎来到管理员页面");
 		  return resultMap;
 	  } 

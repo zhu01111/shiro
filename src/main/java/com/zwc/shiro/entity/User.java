@@ -35,8 +35,8 @@ public class User implements Serializable{
 	
 	private String password;
 	
-	private String role;
-
+	private Long roleId;
+	
 	/**
 	 * @Title:            getId <BR>
 	 * @return:           Long <BR>
@@ -86,22 +86,6 @@ public class User implements Serializable{
 	}
 
 	/**
-	 * @Title:            getRole <BR>
-	 * @return:           String <BR>
-	 */
-	public String getRole() {
-		return role;
-	}
-
-	/**
-	 * @Title:          setRole <BR>
-	 * @return:         String <BR>
-	 */
-	public void setRole(String role) {
-		this.role = role;
-	}
-
-	/**
 	 * @Title:            User
 	 * @param:            @param id
 	 * @param:            @param username
@@ -109,12 +93,12 @@ public class User implements Serializable{
 	 * @param:            @param role
 	 * @throws
 	 */ 
-	public User(Long id, String username, String password, String role) {
+	public User(Long id, String username, String password, Long roleId) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
-		this.role = role;
+		this.roleId = roleId;
 	}
 	
 	/**
@@ -124,5 +108,21 @@ public class User implements Serializable{
 	 */
 	public User() {
 		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @Title:            getRoleId <BR>
+	 * @return:           Long <BR>
+	 */
+	public Long getRoleId() {
+		return roleId;
+	}
+
+	/**
+	 * @Title:          setRoleId <BR>
+	 * @return:         Long <BR>
+	 */
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
 	}
 }

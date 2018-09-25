@@ -37,7 +37,7 @@ public class UserController {
 	
 	 @RequestMapping(value = "/getMessage", method = RequestMethod.GET)
 	 public Map<String, Object> submitLogin() {
-		 	resultMap = new HashMap<>();
+		 	resultMap = new HashMap<>(); 
 			resultMap.put("message", "您拥有用户权限，可以获得该接口的信息！");
 	 return resultMap;
 	 }

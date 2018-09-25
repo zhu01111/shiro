@@ -32,6 +32,6 @@ public interface UserMapper {
 	@Select("select `password` from `user` where `username` = #{username}")	
 	String getPassword(@Param("username") String username);
 	
-	@Select("select `role` from `user` where `username` = #{username}")
+	@Select("select `roleId` from `user` where `username` = #{username}")
 	String getRole(@Param("username") String username);
 }
