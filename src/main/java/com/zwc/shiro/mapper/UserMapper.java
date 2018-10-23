@@ -17,9 +17,13 @@
  */
 package com.zwc.shiro.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+
+import com.zwc.shiro.entity.User;
 
 /**
  * @ClassName:       UserMapper
@@ -34,4 +38,7 @@ public interface UserMapper {
 	
 	@Select("select `roleId` from `user` where `username` = #{username}")
 	String getRole(@Param("username") String username);
+	
+	@Select("select * from `user`")
+	List<User> getList();
 }

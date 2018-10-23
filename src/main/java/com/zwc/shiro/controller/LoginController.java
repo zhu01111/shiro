@@ -68,7 +68,7 @@ public class LoginController {
 	  * @param username 用户名
 	  * @param password 密码
 	  */
-	  @RequestMapping(value = "/login", method = RequestMethod.POST)
+	  @RequestMapping(value = "/login", method = RequestMethod.GET)
 	  public Map<String, Object> login(String username, String password) {
 		  resultMap = new HashMap<>();
 	  // 从SecurityUtils里边创建一个 subject

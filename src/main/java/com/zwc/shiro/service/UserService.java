@@ -17,6 +17,10 @@
  */
 package com.zwc.shiro.service;
 
+import java.util.List;
+
+import com.zwc.shiro.entity.User;
+
 /**
  * @ClassName:       UserService
  * @author:          zhuWeichao
@@ -27,4 +31,6 @@ public interface UserService {
 	String getPassword(String username);
 	
 	String getRole(String username);
+	
+	List<User> getList();
 }

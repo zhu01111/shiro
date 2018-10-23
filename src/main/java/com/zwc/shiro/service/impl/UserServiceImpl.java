@@ -17,9 +17,12 @@
  */
 package com.zwc.shiro.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.zwc.shiro.entity.User;
 import com.zwc.shiro.mapper.UserMapper;
 import com.zwc.shiro.service.UserService;
 
@@ -55,6 +58,16 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public String getRole(String username) {
 		return userMapper.getRole(username);
+	}
+
+	/**
+	 * <p>Title: getList</p>
+	 * @return
+	 * @see com.zwc.shiro.service.UserService#getList()
+	 */ 
+	@Override
+	public List<User> getList() {
+		return userMapper.getList();
 	}
 
 }

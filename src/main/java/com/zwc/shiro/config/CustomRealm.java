@@ -64,6 +64,10 @@ public class CustomRealm extends AuthorizingRealm{
 	 } else if (!password.equals(new String((char[]) token.getCredentials()))) {
 		 throw new AccountException("密码不正确");
 	 }
+	 byte aa = 1;
+	 String b = Byte.toString(aa);
+	 
+	 
 	 return new SimpleAuthenticationInfo(token.getPrincipal(), password, getName());
 	 }
 	 /**

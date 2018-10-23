@@ -26,6 +26,7 @@ import org.springframework.stereotype.Component;
  * @author:          zhuWeichao
  * @date:            2018年9月25日        上午10:00:22
  */
+@SuppressWarnings("serial")
 @Component
 public class User implements Serializable{
 	

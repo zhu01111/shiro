@@ -24,6 +24,7 @@ import java.io.Serializable;
  * @author:          zhuWeichao
  * @date:            2018年9月25日        上午10:02:37
  */
+@SuppressWarnings("serial")
 public class Role implements Serializable{
 	
 	private Long id;
