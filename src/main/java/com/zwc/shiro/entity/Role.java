@@ -83,5 +83,5 @@ public class Role implements Serializable{
 		this.id = id;
 		this.role = role;
 	}
-	
+
 }

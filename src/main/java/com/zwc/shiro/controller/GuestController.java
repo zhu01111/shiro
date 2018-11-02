@@ -19,7 +19,6 @@ package com.zwc.shiro.controller;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -45,6 +44,6 @@ public class GuestController {
 	 public Map<String, Object> submitLogin() {
 		 	resultMap = new HashMap<>();
 			resultMap.put("message", "您拥有获得该接口的信息的权限！");
-	 return resultMap;
+			return resultMap;
 	 }
 }

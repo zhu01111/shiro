@@ -19,7 +19,6 @@ package com.zwc.shiro.controller;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

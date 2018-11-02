@@ -28,7 +28,7 @@ import com.zwc.shiro.entity.User;
  */
 public interface UserService {
 	
-	String getPassword(String username);
+	User getPassword(String username);
 	
 	String getRole(String username);
 	

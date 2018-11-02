@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring: 
   datasource:
@@ -15,3 +15,8 @@ spring:
     content-type: text/html
     enabled: true
     suffix: .html
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 0
+    #password: 123456

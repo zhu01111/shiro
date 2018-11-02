@@ -44,9 +44,8 @@ public class UserServiceImpl implements UserService{
 	 * @see com.zwc.shiro.service.UserService#getPassword(java.lang.String)
 	 */ 
 	@Override
-	public String getPassword(String username) {
-		String password = userMapper.getPassword(username);
-		return password;
+	public User getPassword(String username) {
+		return userMapper.getPassword(username);
 	}
 
 	/**

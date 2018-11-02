@@ -33,8 +33,8 @@ import com.zwc.shiro.entity.User;
 @Mapper
 public interface UserMapper {
 	
-	@Select("select `password` from `user` where `username` = #{username}")	
-	String getPassword(@Param("username") String username);
+	@Select("select * from `user` where `username` = #{username}")	
+	User getPassword(@Param("username") String username);
 	
 	@Select("select `roleId` from `user` where `username` = #{username}")
 	String getRole(@Param("username") String username);

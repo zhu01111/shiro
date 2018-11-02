@@ -19,7 +19,6 @@ package com.zwc.shiro.entity;
 
 import java.io.Serializable;
 
-import org.springframework.stereotype.Component;
 
 /**
  * @ClassName:       User
@@ -27,9 +26,7 @@ import org.springframework.stereotype.Component;
  * @date:            2018年9月25日        上午10:00:22
  */
 @SuppressWarnings("serial")
-@Component
 public class User implements Serializable{
-	
 	private Long id;
 	
 	private String username;
